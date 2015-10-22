@@ -1,0 +1,24 @@
+// ConsoleApplication17.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "iostream"
+#include "conio.h"
+using namespace std;
+template<class T> void intercambio(T &a, T &b)
+{
+	T aux;
+	aux = a;
+	a = b;
+	b = aux;
+}
+void main()
+{
+	int ea = 1, eb = 5;
+	cout << "a  : " << ea<<endl;
+	cout << "b:  " << eb<<endl;
+	intercambio(ea,eb);
+	cout << "a : " << ea << endl;
+	cout << "b : " << eb << endl;
+	_getch();
+}
