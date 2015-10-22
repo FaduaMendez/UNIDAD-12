@@ -1,0 +1,31 @@
+// ConsoleApplication17.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "iostream"
+#include "conio.h"
+using namespace std;
+template<class T> T absoluto(T a)
+{
+	if (a < 0)
+	{
+		a = a*-1;
+	}
+	return a;
+
+}
+void main()
+{
+	int z;
+	float g;
+	double d;
+	cout << "valor absoluto" << absoluto(4)<<endl;
+	cout << "valor absoluto" << absoluto(-6.94)<<endl;
+	cout << "valor absoluto" << absoluto(-100)<<endl;
+	cout << "valor absoluto" << absoluto('A') << endl;
+
+	_getch();
+}
+
+
+
